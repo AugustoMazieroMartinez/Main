@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
+    <link rel="stylesheet" href="cadastroStyle.css">
 </head>
 <body>
     <main>
         <div class="boxModel">
             <div class="caixaForm">
                 <h1>Cadastrar</h1>
-                <form action="">
+                <form>
                     <div class="field">
-                        <label for="nomeCompleto">Nome Completo</label>
                         <input type="text" name="nomeCompleto" id="nomeCompleto">
                     </div>
                     <div class="field">
-                        <label for="usuario">Usuário</label>
                         <input type="text" name="usuario" id="usuario">
                     </div>
-
                     <div class="field">
-                        <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
                     </div>
                     <div>
                         <button name="botao" type="submit" class="botao" >Cadastrar</button>
                     </div>
+                    <p id="nome-error" class="form-error"></p>
                 </form>
             </div>
+
             <div class="textoCadastro">
                 <h2>Faça seu cadastro!</h2>
                 <p>AC2 de Linguagem de programação
