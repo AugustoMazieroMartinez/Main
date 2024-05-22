@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
             if(usuario){
                 console.log("Usuário Encontrado: ", user);
 
-                sessionStorage.setItem('Usuário', user.usuario);
+                sessionStorage.setItem('Usuario', user.usuario);
             } 
             else{
                 document.getElementById('nome-error').textContent = "Senha Incorreta!";
