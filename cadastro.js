@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelector('.form-error').value = '';
 
     function validar(){
-        var nome = document.getElementById('nome').value;
-        var usuario = document.getElementById('User').value;
+        var nome = document.getElementById('nomeCompleto').value;
+        var usuario = document.getElementById('usuario').value;
         var senha = document.getElementById('senha').value;
 
         if(!nome || !usuario || !senha){
