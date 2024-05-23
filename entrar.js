@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const usuario = document.getElementById('usuario').value;
         const senha = document.getElementById('senha').value;
 
-        fetch(`https://664e79e7fafad45dfae02a8d.mockapi.io/linguagem/ac2_9?email=${usuario}`, {
+        fetch(`https://664e79e7fafad45dfae02a8d.mockapi.io/linguagem/ac2_9?usuario=${usuario}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

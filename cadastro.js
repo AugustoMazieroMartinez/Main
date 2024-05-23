@@ -17,19 +17,24 @@ document.addEventListener("DOMContentLoaded", function(){
             "senha": senha
         }
         console.log('final')
-        return usuario;
+        return user;
     }
     document.querySelector('.botao').addEventListener('click', function(event){
         event.preventDefault();
         let resp = validar();
         console.log(JSON.stringify(resp, null, 2));
         if(resp){
+            console.log(resp);
             fetch(`https://664e79e7fafad45dfae02a8d.mockapi.io/linguagem/ac2_9`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(resp)});
+                body: JSON.stringify(resp)
+            })
+            .then(e => {
+                window.location.href = 'entrar.html';
+            })
         }
     });
 });
