@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function(){
                 'Content-Type': 'application/json',
             }
         })
-        .then(data => {
-            const user = data.find(u => u.senha === senha);
+        .then(response => response.json())  
+        .then(dado => {
+            const user = dado.find(u => u.senha === senha);
             if(usuario){
                 console.log("Usuário Encontrado: ", user);
 
-                localStorageStorage.setItem('Usuario', user.usuario);
                 window.location.href = 'parabens.html';
             } 
             else{
