@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 20px;
 }
 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 
 .boxModel {
@@ -29,5 +29,59 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    
+}
+.caixaForm h1{
+    margin-bottom: 43px;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgba(31, 31, 31, 1);
+}
+.caixaForm form .field{
+    color: rgba(238, 238, 238, 1);
+    margin-bottom: 13px;
+    text-decoration: none;
+    border: none;
+}
+
+.caixaForm form .field input:placeholder{
+    color: rgba(0, 0, 0, 0.45);
+    border: none;
+}
+.caixaForm form .field input{
+    border-radius: 8px;
+    border:none;
+    padding: 8px 204px 8px 9px;
+}
+.caixaForm form .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 33px;
+}
+.caixaForm form .botao button{
+    padding: 8px 33px 8px 33px;
+    border-radius: 8px;
+    border: solid 3px black;
+    box-shadow: 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 14px;
+}
+.textoCadastro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 16px 0px 32px;
+}
+.textoCadastro h2{
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.textoCadastro p{
+    text-align: center;
+    font-weight: medium;
+    font-size: 20px;
 }
