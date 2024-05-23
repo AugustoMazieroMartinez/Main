@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
             const user = data.find(u => u.senha === senha);
             if(usuario){
                 console.log("Usuário Encontrado: ", user);
+
+                sessionStorage.setItem('Usuario', user.usuario);
             } 
             else{
                 document.getElementById('nome-error').textContent = "Senha Incorreta!";
