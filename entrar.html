@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
+    <link rel="stylesheet" href="entrarStyle.css">
 </head>
 <body>
-    
+    <main>
+        <div class="boxModel">
+            <div class="textoBemvindo">
+                <h1>Bem-vindo!</h1>
+                <p>registre com seus dados pessoais</p>
+                <div class="botao">
+                    <button name="botao" type="submit">CADASTRAR</button>
+                </div>
+            </div>
+            <div class= "entrarForm">
+                <h1>Entrar</h1>
+                <form>
+                    <div class="field">
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="field">
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    </div>
+                    <div class="botao">
+                        <button name="botao" type="submit">ENTRAR</button>
+                    </div>
+                    <p id="nome-error" class="form-error"></p>
+                </form>
+            </div>
+        </div>
 
-
-
+    </main>
+    <script src="entrar.js"></script>
 </body>
 </html>

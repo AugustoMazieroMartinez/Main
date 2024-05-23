@@ -12,7 +12,6 @@ body{
     margin-top: 170px;
     background-color: rgba(234, 255, 214, 1);
 }
-
 .boxModel {
     background-color: rgba(129, 217, 127, 1);
     border-radius: 35px;
@@ -23,7 +22,9 @@ body{
     justify-content: space-around;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.caixaForm{
+
+.boxModel .textoBemvindo{
+    margin: 0px 81px 0px 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -31,36 +32,26 @@ body{
     align-items: center;
     align-content: center;
 }
-.caixaForm h1{
-    margin-bottom: 43px;
-    font-weight: bold;
+.boxModel .textoBemvindo h1{
     font-size: 36px;
-    color: rgba(31, 31, 31, 1);
+    font-weight: bold;
+    margin-bottom: 67px;
 }
-.caixaForm form .field{
-    color: rgba(238, 238, 238, 1);
-    margin-bottom: 13px;
-    text-decoration: none;
-    border: none;
+.boxModel .textoBemvindo p{
+    font-size: 15px;
+    font-weight: 600;
 }
 
-.caixaForm form .field input:placeholder{
-    color: rgba(0, 0, 0, 0.45);
-    border: none;
-}
-.caixaForm form .field input{
-    border-radius: 8px;
-    border:none;
-    padding: 8px 204px 8px 9px;
-}
-.caixaForm form .botao{
+
+.textoBemvindo .botao{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 33px;
+    margin-top: 12px;
 }
-.caixaForm form .botao button{
+
+.textoBemvindo  .botao button{
     padding: 8px 33px 8px 33px;
     border-radius: 8px;
     border: solid 3px black;
@@ -68,21 +59,55 @@ body{
     font-weight: bold;
     font-size: 14px;
 }
-.textoCadastro{
+
+.boxModel .entrarForm{
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin: 0px 16px 0px 32px;
+    align-content: center;
+    margin-right: 39px;
 }
-.textoCadastro h2{
-    margin-bottom: 50px;
+.boxModel .entrarForm h1{
     font-size: 36px;
     font-weight: bold;
+    color: rgba(31, 31, 31, 1);
+    margin-bottom: 47px;
 }
-.textoCadastro p{
-    text-align: center;
-    font-weight: medium;
-    font-size: 20px;
+
+.boxModel .entrarForm form .field{
+    color: rgba(238, 238, 238, 1);
+    margin-bottom: 13px;
+    text-decoration: none;
+    border: none;
+}
+
+.boxModel .entrarForm form .field input:placeholder{
+    color: rgba(0, 0, 0, 0.45);
+    border: none;
+}
+.boxModel .entrarForm form .field input{
+    border-radius: 8px;
+    border:none;
+    padding: 8px 204px 8px 9px;
+}
+.boxModel .entrarForm .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 12px;
+}
+
+.boxModel .entrarForm .botao button{
+    padding: 8px 33px 8px 33px;
+    border-radius: 8px;
+    border: solid 3px rgba(255, 255, 255, 1);
+    background-color: rgba(31, 31, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 14px;
 }
