@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function(){
                 'Content-Type': 'application/json',
             }
         })
-        .then(response => response.json())
         .then(data => {
             const user = data.find(u => u.senha === senha);
             if(usuario){
                 console.log("Usuário Encontrado: ", user);
 
-                sessionStorage.setItem('Usuario', user.usuario);
+                localStorageStorage.setItem('Usuario', user.usuario);
+                window.location.href = 'parabens.html';
             } 
             else{
                 document.getElementById('nome-error').textContent = "Senha Incorreta!";
