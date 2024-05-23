@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-    const form = document.querySelector('form');
-
     var usuario = sessionStorage.getItem('Usuario');
-    document.getElementById('nomeUser').textContent = usuario;
+    document.getElementById('nomeUser').textContent = 'Seja muito bem vindo ' + usuario + '!';
 });
